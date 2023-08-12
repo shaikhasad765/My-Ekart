@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./app.styles.scss";
+import { Route, Routes } from "react-router-dom";
+import Navigation from "./routes/navigation/navigation.component";
+import Home from "./routes/home/home.component";
+import AddProd from "./routes/addProductForm/addProd.component";
+import Cart from "./routes/cart/cart.component";
+import Landingpage from "./components/Landingpage/Landingpage.component";
+import ProductDetail from "./components/product-detail/product-detail.component";
+import { ToastContainer } from "react-toastify";
+import HomeComponent from "./components/home-component/home.component";
+import Footer  from "./routes/Footer/Footer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path="addProd" element={<AddProd />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="allProds" element={<HomeComponent />} />
+          <Route path="landpg" element={<Landingpage />} />
+          <Route path="product/:id" element={<ProductDetail />} />
+        </Route>
+      </Routes>
+      <Footer/>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        // theme="dark"
+      />
     </div>
   );
 }

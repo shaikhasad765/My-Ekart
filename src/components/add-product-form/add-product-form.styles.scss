@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.form-container {
+    width: 30%;
+    margin-top: 80px;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: whitesmoke;
+    align-items: center;
+    .add_prod_title {
+      font-size: 30px;
+      font-family: 'Lilita One', cursive;
+    }
+    input {
+      display: block;
+      height: 46.5px;
+      margin-top: 20px;
+      font-size: 15px;
+      border-radius: 10px;
+      border: None;
+      padding: 10px;
+      font-family: 'Lilita One', cursive;
+      width: 100%;
+    }
+
+    input:hover{
+      box-shadow: 0 0 10px grey;
+    }
+
+    .add-prod-button {
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 25px;
+      font-family: 'Lilita One', cursive;
+      border: none;
+      background-color: #0a1d37;
+      transition: all 0.6s;
+      color: #f2f2f2;
+      font-size: 15px;
+      width: 30%;
+      transition: all 0.4s;
+    }
+    .add-prod-button:hover {
+      transform: scale(1.1);
+    }
+  }
