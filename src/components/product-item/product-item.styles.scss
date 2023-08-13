@@ -104,3 +104,8 @@ textarea {
   opacity: 1; /* Change opacity to 1 after loading */
   transform: translateX(0); /* Reset translation */
 }
+
+.product-card:hover{
+    box-shadow: 0 0 10px aquamarine;
+    background-color: rgb(202, 201, 201);
+}
