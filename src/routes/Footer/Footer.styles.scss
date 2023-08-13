@@ -1,3 +1,4 @@
+/* Styling for the footer */
 .footer {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -7,12 +8,14 @@
     justify-self: center;
 }
 
+/* Styling for footer text */
 .footer__text {
     line-height: 30px;
     color: #d8cccccf;
     width: 650px;
 }
 
+/* Styling for quick links section */
 .footer__quick-link{
     padding-left: 50px;
     margin-left: 50px;
@@ -20,37 +23,44 @@
     text-decoration: none;
 }
 
+/* Styling for quick link list items */
 .footer__quick-link ul li {
     list-style: none;
     background: transparent !important;
     margin-top: 10px;
 }
 
+/* Styling for quick link list item links */
 .footer__quick-link ul li a {
     color: #d8cccccf;
     text-decoration: none;
 }
 
+/* Styling for quick links section title */
 .quick__links-title {
     margin-top: 30px;
     color: #fff;
     font-size: 1.1rem;
 }
 
+/* Styling for footer contact information */
 .footer__contact li span,
 .footer__contact li p {
     color: #d8cccccf;
 }
 
+/* Styling for footer contact information spans */
 .footer__quick-link li span {
     font-size: 1.2rem;
 }
 
+/* Styling for footer contact information paragraphs */
 .footer__contact li p {
     font-size: 0.9rem;
     width: 900px;
 }
 
+/* Styling for footer copyright text */
 .footer__copyright {
     color: white;
     font-size: 0.9rem;

@@ -1,18 +1,22 @@
+/* Styling for the main app container */
 .App {
   text-align: center;
 }
 
+/* Styling for the app logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Animation for the app logo spin (if reduced motion preference is not set) */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Styling for the app header */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +28,12 @@
   color: white;
 }
 
+/* Styling for app links */
 .App-link {
   color: #61dafb;
 }
 
+/* Keyframes animation for spinning the app logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

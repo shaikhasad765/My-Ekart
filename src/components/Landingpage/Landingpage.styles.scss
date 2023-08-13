@@ -1,3 +1,4 @@
+/* Styles for the hero section */
 .hero__section {
     background: var(--hero-bg);
     align-items: center;
@@ -5,6 +6,7 @@
     width: 100%;
 }
 
+/* Styles for the h2 element inside hero__content */
 .hero__content h2 {
     color: var(--primary-color);
     font-size: 2.5rem;
@@ -13,16 +15,19 @@
     width: 640px;
 }
 
+/* Styles for the p element inside hero__content */
 .hero__content p {
     color: var(--primary-color);
     line-height: 28px;
     width: 810px;
 }
 
+/* Styles for the first p element inside hero__section */
 .hero__section p:nth-child(1) {
     font-weight: 600;
 }
 
+/* Styles for the buy__btn class */
 .buy__btn {
     border: none;
     outline: none;
@@ -34,53 +39,49 @@
     font-size: 1rem;
 }
 
+/* Styles for the link inside buy__btn class */
 .buy__btn a {
     color: #fff;
     text-decoration: none;
 }
 
-.buy__btn:hover{
+/* Styles for buy__btn on hover */
+.buy__btn:hover {
     box-shadow: 0 0 10px aquamarine;
-
 }
 
+/* Styles for hero__content */
 .hero__content {
     padding-top: 45px;
 }
 
-
 /* Media Queries */
-@media only screen and (max-width:992px) {
+@media only screen and (max-width: 992px) {
     .hero__content h2 {
         font-size: 2rem;
     }
-    .section__title{
+    .section__title {
         font-size: 1.7rem;
     }
-
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .hero__content h2 {
         font-size: 1.6rem;
     }
-
-    .hero__content p{
-        font-size:0.9rem;
-
-    }
-    .buy__btn a{
+    .hero__content p {
         font-size: 0.9rem;
     }
-    .section__title{
+    .buy__btn a {
+        font-size: 0.9rem;
+    }
+    .section__title {
         font-size: 1.14rem;
     }
-
 }
 
-@media only screen and (max-width:576px){
-
-    .hero__content{
+@media only screen and (max-width: 576px) {
+    .hero__content {
         padding-top: 0;
         margin-bottom: 40px;
     }

@@ -1,3 +1,4 @@
+// Import necessary modules, styles, and images
 import "./product-item.styles.scss";
 import ReactStars from "react-stars";
 import { toast } from "react-toastify";
@@ -7,16 +8,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectCartItems } from "../../store/cart/cart.selector";
 import { selectProductsArray } from "../../store/products/product.selector";
 import { useNavigate } from "react-router-dom";
-import editimg from "../../assets/Images/edit.png"
-import delimg from "../../assets/Images/delete.png"
-import cartimg from "../../assets/Images/cart.png"
+import editimg from "../../assets/Images/edit.png";
+import delimg from "../../assets/Images/delete.png";
+import cartimg from "../../assets/Images/cart.png";
 
+// Import necessary actions
 import {
   saveEditProduct,
   deleteProduct,
 } from "../../store/products/product.action";
 import { addItemToCart } from "../../store/cart/cart.action";
 
+// Define the ProductItem component
 function ProductItem({ product }) {
   const { title, price, images, rating, description, id } = product;
 
@@ -26,7 +29,7 @@ function ProductItem({ product }) {
     setIsLoaded(true); // Trigger animation when component mounts
   }, []);
 
-  //For Edit Cart Item
+  // For Edit Cart Item
   const [beingEdited, setBeingEdited] = useState(false);
   const [newTitle, setNewTitle] = useState(title);
   const [newPrice, setNewPrice] = useState(price);
@@ -82,6 +85,7 @@ function ProductItem({ product }) {
     navigate(`/product/${id}`);
   };
 
+  // Render the component
   return (
     <div className={`product-card ${isLoaded ? "loaded" : ""}`}>
       <div className="image-price-rating-container">
@@ -145,32 +149,22 @@ function ProductItem({ product }) {
               <div className="action-icon" onClick={handelSave}>
                 <p>Save</p>
               </div>
-
               <div
                 className="action-icon"
                 onClick={() => setBeingEdited(false)}>
-                  <p>Cancel</p>
+                <p>Cancel</p>
               </div>
             </div>
           ) : (
             <div className="action-container">
               <div className="action-icon" onClick={() => setBeingEdited(true)}>
-                <img
-                  src={editimg}
-                  alt="edit"
-                />
+                <img src={editimg} alt="edit" />
               </div>
               <div className="action-icon" onClick={handelDelete}>
-                <img
-                  src={delimg}
-                  alt="delete"
-                />
+                <img src={delimg} alt="delete" />
               </div>
               <div className="action-icon" onClick={addProductToCart}>
-                <img
-                  src={cartimg}
-                  alt="addToCart"
-                />
+                <img src={cartimg} alt="addToCart" />
               </div>
             </div>
           )}
@@ -180,4 +174,5 @@ function ProductItem({ product }) {
   );
 }
 
+// Export the ProductItem component as the default export
 export default ProductItem;

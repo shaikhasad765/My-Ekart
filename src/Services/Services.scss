@@ -1,3 +1,4 @@
+/* Styling for service items */
 .service__item {
     padding: 20px;
     margin: 10px;
@@ -9,6 +10,7 @@
     cursor: pointer;
 }
 
+/* Styling for icon within service item */
 .service__item span i {
     font-size: 2.2rem;
     background: var(--primary-color);
@@ -18,12 +20,14 @@
     font-weight: 400 !important;
 }
 
+/* Styling for heading within service item */
 .service__item h3 {
     color: var(--primary-color);
     font-size: 1.1rem;
     font-weight: 600;
 }
 
+/* Styling for paragraph within service item */
 .service__item p {
     font-size: 0.9rem;
     margin-top: 5px;
@@ -33,6 +37,7 @@
 
 /* Media Queries */
 
+/* For screens up to 992px width */
 @media only screen and (max-width:992px) {
     .service__item span i {
         font-size: 1.8rem;
@@ -51,6 +56,7 @@
 
 }
 
+/* For screens up to 768px width */
 @media only screen and (max-width:768px) {
 
 
@@ -61,6 +67,7 @@
 
 }
 
+/* For screens up to 576px width */
 @media only screen and (max-width:576px) {
     .service__item {
         padding: 20px;

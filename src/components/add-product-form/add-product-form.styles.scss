@@ -1,5 +1,7 @@
+/* Import a font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+/* Define styles for the form container */
 .form-container {
     width: 30%;
     margin-top: 80px;
@@ -10,9 +12,13 @@
     flex-direction: column;
     background-color: whitesmoke;
     align-items: center;
+
+    /* Define styles for the form container */
     .add_prod_title {
       font-size: 30px;
       font-family: 'Lilita One', cursive;
+
+    /* Styles for input fields */
     }
     input {
       display: block;
@@ -26,10 +32,12 @@
       width: 100%;
     }
 
+    /* Styles for input on hover */
     input:hover{
       box-shadow: 0 0 10px grey;
     }
 
+    /* Styles for the add product button */
     .add-prod-button {
       border-radius: 10px;
       padding: 12px;
@@ -45,6 +53,8 @@
       width: 30%;
       transition: all 0.4s;
     }
+
+    /* Styles for the add product button on hover */
     .add-prod-button:hover {
       transform: scale(1.1);
     }

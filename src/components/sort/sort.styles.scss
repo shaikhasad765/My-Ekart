@@ -1,5 +1,7 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+/* Styling for the Sort button */
 .sort-btn {
     background-color: #f2f2f2;
     padding: 10px;
@@ -17,15 +19,18 @@
     transition: background-color 0.3s;
 }
 
+/* Styling for the button text (will be used for fade effect) */
 .btn-text {
     transition: opacity 0.3s;
 }
 
+/* Styling for the sorted button state */
 .sort-btn.sorted {
     background-color: #00bea5;
     color: white;
 }
 
+/* Styling for the button text in the sorted state (fading effect) */
 .sort-btn.sorted .btn-text {
     opacity: 0;
 }

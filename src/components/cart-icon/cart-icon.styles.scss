@@ -1,3 +1,4 @@
+/* Styles for the cart icon container */
 .cart-icon-container {
     width: 45px;
     height: 45px;
@@ -5,14 +6,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
     cursor: pointer;
   
+    /* Styles for the shopping icon */
     .shopping-icon {
       width: 30px;
       height: 30px;
     }
   
+    /* Styles for the item count label */
     .item-count {
       position: absolute;
       font-size: 15px;

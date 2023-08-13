@@ -1,5 +1,7 @@
+// Importing action types from the "product.type" module
 import { PRODUCTS_ACTION_TYPES } from "./product.type";
 
+// Initial state for the products section of the state
 export const PRODUCTS_INITIAL_STATE = {
   products: [],
   sortedProds: [],
@@ -8,12 +10,15 @@ export const PRODUCTS_INITIAL_STATE = {
   error: null,
 };
 
+// Reducer function for managing the products state
 export const productsReducer = (
   state = PRODUCTS_INITIAL_STATE,
   action = {}
 ) => {
+  // Destructuring the "type" and "payload" properties from the action
   const { type, payload } = action;
 
+  // Switching between different action types to update the state accordingly
   switch (type) {
     case PRODUCTS_ACTION_TYPES.FETCH_PRODUCTS_START:
       return { ...state, isLoading: true };

@@ -1,96 +1,106 @@
+/* Styling for the product card containers */
 .product-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    margin-bottom: 20px;
-    background-color: whitesmoke;
-    border-radius: 20px;
-    cursor: pointer;
-    position: relative;
-    opacity: 0; // Set initial opacity to 0
-    transform: translateX(-20px); // Set initial translation
-    transition: opacity 0.5s ease, transform 0.5s ease; 
-    .image-price-rating-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0; /* Set initial opacity to 0 */
+  transform: translateX(-20px); /* Set initial translation */
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+  /* Styling for the image, price, and rating container */
+  .image-price-rating-container {
       display: flex;
       align-items: center;
       padding: 10px;
+      /* Styling for the title and price containers */
       .title-container {
-        margin-bottom: 8px;
-        font-family: 'Lilita One', cursive;
+          margin-bottom: 8px;
+          font-family: 'Lilita One', cursive;
       }
       .price-container {
-        margin-bottom: 60px;
-        font-family: 'Lilita One', cursive;
+          margin-bottom: 60px;
+          font-family: 'Lilita One', cursive;
       }
-
-      .price-container input{
-        margin-left: 10px;
+      .price-container input {
+          margin-left: 10px;
       }
       img {
-        border-radius: 12px;
-        width: 200px;
-        margin-right: 60px;
+          border-radius: 12px;
+          width: 200px;
+          margin-right: 60px;
       }
-    }
-  
-    .title-rating-price {
+  }
+
+  /* Styling for title, rating, and price */
+  .title-rating-price {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-    }
-    .desc-actions {
+  }
+  /* Styling for description and actions */
+  .desc-actions {
       width: 30%;
+      /* Styling for the description container */
       .description-container {
-        margin-bottom: 15px;
-        font-family: 'Lilita One', cursive;
+          margin-bottom: 15px;
+          font-family: 'Lilita One', cursive;
       }
+      /* Styling for action icons */
       .action-container {
-        display: flex;
-        margin-top: 15px;
-        position: absolute;
-        bottom: 15px;
-        right: 5px;
-        .action-icon {
-          padding: 10px;
-          img {
-            width: 25px;
-            margin-right: 20px;
-            cursor: pointer;
+          display: flex;
+          margin-top: 15px;
+          position: absolute;
+          bottom: 15px;
+          right: 5px;
+          /* Styling for action icons and text */
+          .action-icon {
+              padding: 10px;
+              img {
+                  width: 25px;
+                  margin-right: 20px;
+                  cursor: pointer;
+              }
+              p {
+                  padding: 10px;
+                  border-radius: 10px;
+                  color: white;
+                  background-color: #0a1d37;
+              }
           }
-          p {
-            padding: 10px;
-            border-radius: 10px;
-            color: white;
-            background-color: #0a1d37;
-          }
-        }
       }
-    }
   }
-  
-  input,
-  textarea {
-    font-size: 15px;
-    padding: 5px;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    padding-left: 10px;
-    font-family: 'Lilita One', cursive;
-  }
+}
 
-  textarea {
-    min-width: 450px;
-    max-width: 450px;
-    max-width: 450px;
-    max-height: 100px;
-    min-height: 100px;
-    outline: none;
-    resize: none;
-  }
+/* Styling for input and textarea elements */
+input,
+textarea {
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  padding-left: 10px;
+  font-family: 'Lilita One', cursive;
+}
 
+/* Styling specifically for textarea */
+textarea {
+  min-width: 450px;
+  max-width: 450px;
+  max-width: 450px; /* This line seems redundant */
+  max-height: 100px;
+  min-height: 100px;
+  outline: none;
+  resize: none;
+}
+
+/* Styling for product card when loaded */
 .product-card.loaded {
-  opacity: 1; // Change opacity to 1 after loading
-  transform: translateX(0); // Reset translation
+  opacity: 1; /* Change opacity to 1 after loading */
+  transform: translateX(0); /* Reset translation */
 }

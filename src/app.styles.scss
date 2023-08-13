@@ -1,16 +1,20 @@
+/* Importing the Montserrat font family from Google Fonts with specific font weights for usage. */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+/* Resetting default padding, margin, and box-sizing for all elements. */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 
+  /* Styling for the entire body of the page using the Montserrat font family. */
   body {
     font-family: "Montserrat", sans-serif;
     background-color: white;
   }
 }
 
-/*  css variables */
+/* Defining CSS variables for reuse throughout the stylesheet. */
 :root {
   --card-bg-01: #fdefe6;
   --card-bg-02: #d6e5fb;

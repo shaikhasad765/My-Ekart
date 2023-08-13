@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+/* Styles for the product-details section */
 .product-details {
     display: flex;
     align-items: center;
@@ -13,39 +15,49 @@
     border-radius: 20px;
     justify-self: center;
     margin-bottom: 30px;
-    
+
+    /* Styles for the image inside product-details */
     img {
-      border-radius: 15px;
-      width: 400px;
-    }
-    .details-title-price-buy {
-      margin-left: 150px;
-      width: 100%;
-      .details {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        width: 50%;
-      }
-      .price {
-        margin-bottom: 30px;
-      }
-  
-      .add-prod-button {
-        padding: 10px;
-        font-size: 12px;
-        margin-top: 25px;
-        border: none;
-        font-family: 'Lilita One', cursive;
-        background-color: var(--primary-color);
         border-radius: 15px;
-        border: 2px solid #232f3e;
-        color: #f2f2f2;
-        font-size: 18px;
-        width: 40%;
-        transition: all 0.8s;
-      }
-      .add-prod-button:hover {
-        transform: scale(1.1);
-      }
+        width: 400px;
     }
-  }
+
+    /* Styles for details-title-price-buy class */
+    .details-title-price-buy {
+        margin-left: 150px;
+        width: 100%;
+
+        /* Styles for the details inside details-title-price-buy */
+        .details {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 50%;
+        }
+
+        /* Styles for the price inside details-title-price-buy */
+        .price {
+            margin-bottom: 30px;
+        }
+
+        /* Styles for add-prod-button class */
+        .add-prod-button {
+            padding: 10px;
+            font-size: 12px;
+            margin-top: 25px;
+            border: none;
+            font-family: 'Lilita One', cursive;
+            background-color: var(--primary-color);
+            border-radius: 15px;
+            border: 2px solid #232f3e;
+            color: #f2f2f2;
+            font-size: 18px;
+            width: 40%;
+            transition: all 0.8s;
+        }
+
+        /* Styles for add-prod-button on hover */
+        .add-prod-button:hover {
+            transform: scale(1.1);
+        }
+    }
+}

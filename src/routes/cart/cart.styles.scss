@@ -1,3 +1,4 @@
+/* Styling for the cart container */
 .checkout-container {
     width: 60%;
     min-height: 70vh;
@@ -9,6 +10,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
   
+    /* Styling for the cart header */
     .checkout-header {
       width: 95%;
       padding: 10px;
@@ -20,18 +22,20 @@
       background-color: white;
       border-radius: 10px;
   
+      /* Styling for individual header blocks */
       .header-block {
         text-transform: capitalize;
         align-items: center;
-
         width: 23%;
   
+        /* Styling for the last header block */
         &:last-child {
           width: 8%;
         }
       }
     }
   
+    /* Styling for the total price display */
     .total {
       margin-top: 30px;
       margin-bottom: 20px;
@@ -39,6 +43,8 @@
       font-weight: bold;
     }
   }
+
+  /* Default text color */
   span {
     color: black;
   }
